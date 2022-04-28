@@ -1,18 +1,25 @@
 <template>
-  <button-hard-skills/>
-  <button-soft-skills/>
+  <div class="main">
+    <soft-skills/>
+    <photo/>
+  </div>
 </template>
 
 <script>
-import ButtonHardSkills from './components/ButtonHardSkills.vue';
-import ButtonSoftSkills from './components/ButtonSoftSkills.vue';
+import Photo from './components/Photo.vue';
+import SoftSkills from './components/SoftSkills.vue';
 
 export default {
-  components: { ButtonHardSkills, ButtonSoftSkills },
+  components: { SoftSkills, Photo },
+
   name: 'App',
 };
 </script>
 
 <style lang="scss">
 @import '@/assets/scss/main.scss';
+
+.main {
+  background-color: $white;
+}
 </style>
