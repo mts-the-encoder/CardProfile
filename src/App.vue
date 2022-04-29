@@ -1,16 +1,16 @@
 <template>
   <div class="main">
     <soft-skills/>
-    <photo/>
+    <contact/>
   </div>
 </template>
 
 <script>
-import Photo from './components/Photo.vue';
+import Contact from './components/Contact.vue';
 import SoftSkills from './components/SoftSkills.vue';
 
 export default {
-  components: { SoftSkills, Photo },
+  components: { SoftSkills, Contact },
 
   name: 'App',
 };
