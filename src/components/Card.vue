@@ -11,21 +11,17 @@
         <div class="about">
             <contact/>
         </div>
-        <div class="buttons"> 
-            <button-soft-skills/>
-            <button-hard-skills/>
-        </div>
+        <trigger/>
     </div>
 </template>
 
 <script>
-import ButtonHardSkills from './ButtonHardSkills.vue';
-import ButtonSoftSkills from './ButtonSoftSkills.vue';
 import Contact from './Contact.vue';
 import Photo from './Photo.vue';
+import Trigger from './Trigger.vue';
 
 export default {
-    components: { Photo, Contact, ButtonSoftSkills, ButtonHardSkills },
+    components: { Photo, Contact, Trigger, },
     name: 'Card'
 };
 </script>
@@ -41,7 +37,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    overflow: hidden;
+    
 
     .info {
         display: flex;
@@ -82,13 +78,6 @@ export default {
         height: 20%;
         margin-right: 200px;
         padding-top: 200px;
-    }
-    .buttons{
-        height: 40%;
-        width: 100%;
-        padding-top: 100px;
-        display: flex;
-        justify-content: space-evenly;
     }
 }
 </style>

@@ -20,6 +20,7 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 5px 50px 2px 2px;
+    transition: opacity 2s;
 
     .skills {
         color: $gold;

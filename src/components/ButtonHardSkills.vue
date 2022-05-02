@@ -1,5 +1,8 @@
 <template>
-    <input class="hs" type="button" value="Hard Skills">
+    <label for="HardSkills" class="hs">
+        <input class="check" type="checkbox" id="HardSkills">
+        <span>Hard Skills</span>
+    </label>
 </template>
 
 <script>
@@ -19,5 +22,12 @@ export default {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .check {
+        display: none;
+    }
 }
 </style>

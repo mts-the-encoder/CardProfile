@@ -1,5 +1,8 @@
 <template>
-    <input class="ss" type="button" value="Soft Skills">
+    <label for="SoftSkills" class="ss" >
+        <input class="check" type="checkbox" id="SoftSkills">
+        <span>Soft Skills</span>
+    </label>
 </template>
 
 <script>
@@ -19,5 +22,14 @@ export default {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .check {
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+    }
 }
 </style>
