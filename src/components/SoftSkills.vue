@@ -22,7 +22,6 @@ export default {
     border-radius: 5px 50px 2px 2px;
 
     .skills {
-        
         color: $gold;
     }
 }

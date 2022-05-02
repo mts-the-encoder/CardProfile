@@ -19,12 +19,5 @@ export default {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
-    margin-left: 100px;
-    margin-top: 100px;
-}
-// vou testar isso dps, pra ver se fica legal
-.ss:hover {
-    background-color: $white;
-    color: $black;
 }
 </style>

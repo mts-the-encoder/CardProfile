@@ -19,7 +19,6 @@ export default {
     border-radius: 50%;
     background-color: $white;
     filter: drop-shadow(10px 10px 10px $black);
-    margin-left: 500px;
 
     .circle {
     width: 200px;

@@ -1,16 +1,14 @@
 <template>
   <div class="main">
-    <soft-skills/>
-    <contact/>
+    <card/>
   </div>
 </template>
 
 <script>
-import Contact from './components/Contact.vue';
-import SoftSkills from './components/SoftSkills.vue';
+import Card from './components/Card.vue';
 
 export default {
-  components: { SoftSkills, Contact },
+  components: { Card },
 
   name: 'App',
 };
@@ -20,6 +18,9 @@ export default {
 @import '@/assets/scss/main.scss';
 
 .main {
-  background-color: $white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

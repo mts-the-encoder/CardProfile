@@ -13,7 +13,7 @@
             <img class="icon--contacts" src="../assets/imgs/twitter.svg" alt="Twitter">
         </div>
         <div class="contact">
-            <img class="icon--contacts" src="../assets/imgs/face.svg" alt="Facebook">
+            <img class="icon--contactss" src="../assets/imgs/face.svg" alt="Facebook">
         </div>
         <div class="contact">
             <img class="icon--contacts" src="../assets/imgs/insta.svg" alt="Instagram">
@@ -36,8 +36,8 @@ export default {
     align-items: center;
 
     .contact {
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
         border: 2px solid $black;
         display: flex;
@@ -45,23 +45,25 @@ export default {
         align-items: center;
         filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
         box-shadow: 1px 1px 0 0 $black;
+        cursor: pointer;
 
         .icon--contact {
-            height: 30px;
+            height: 35px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
 
         .icon--contacts {
-            height: 50px;
-            margin: 0;
-            top: 50%;
-            left: 50%;
-            margin-right: 0;
-            margin-top: 20px;
+            height: 55px;
+            margin-top: 25px;
+        }
+        .icon--contactss {
+            height: 55px;
+            margin-top: 22px;
+            margin-left: 1.3px;
         }
     }
     .contact:hover{
-        background-color: $gold;
+        background-color: $white;
     
         .icon--contacts:hover {
             filter: drop-shadow(0px 4px 4px $black);
