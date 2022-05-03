@@ -1,29 +1,50 @@
 <template>
     <div class="wrapper">
-	<div class="lista-item">
-		<input class="trigger-input" id="faq-titulo-1" type="checkbox">
+	<div class="item--list">
+		<input class="trigger--input" id="title--one" type="checkbox">
 		<div class="trigger-wrapper">
-			<label for="faq-titulo-1">
-				<h2 class="faq-titulo">Soft Skills</h2>
+			<label for="title--one">
+				<h2 class="skills--title">Soft Skills</h2>
 			</label>
-			<p class="faq-conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eligendi vero in dolorum similique perspiciatis dolor placeat aut reiciendis, ducimus atque doloremque, sed consequatur! Voluptatum soluta harum provident quia maiores?.</p>
+			<ul class="content--sk">
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+			</ul>
 		</div>
 	</div>
 	
-	<div class="lista-item">
-		<input class="trigger-input" id="faq-titulo-2" type="checkbox">
+	<div class="item--list">
+		<input class="trigger--input" id="title--two" type="checkbox">
 		<div class="trigger-wrapper">
-			<label for="faq-titulo-2">
-				<h2 class="faq-titulo">Hard Skills</h2>
+			<label for="title--two">
+				<h2 class="skills--title">Hard Skills</h2>
 			</label>
-			<p class="faq-conteudo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ab placeat molestias libero sit animi itaque doloremque magni nesciunt, dignissimos quos minus ratione perferendis, eum, consequuntur a cumque accusantium accusamus..</p>
+			<ul class="content--sk list">
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+				<li>lorem.</li>
+			</ul>
 		</div>
 	</div>
 </div>
 </template>
 
 <script>
-
     export default {
     name: "Trigger",
 };
@@ -35,59 +56,65 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
 
-.lista-item {
-    width: 200px;
-	background: $black;
-	border-radius: 4px;
-	margin-bottom: 20px;
-	padding: 10px;
-	box-shadow: 0 2px 6px rgba(50,50,90,.1);
-}
+	.item--list {
+		position: relative;
+		width: 200px;
+		background: $black;
+		border-radius: 5px 20px 5px 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		box-shadow: 0 2px 6px rgba(50,50,90,.1);
+		border: 2px solid $gold;
 
-.faq-titulo {
-	cursor: pointer;
-	padding: 10px;
-	font-size: 1.4em;
-	font-family: monospace;
-	color: $white;
-}
+		.skills--title {
+			cursor: pointer;
+			padding: 10px;
+			font-size: 18px;
+			color: $white;
+		}
 
-.faq-titulo::before {
-	content: '';
-	display: inline-block;
-	height: 12px;
-	width: 24px;
-	margin-right: 10px;
-	background: $white;
-}
+		.skills--title::before {
+			content: '';
+			display: inline-block;
+			height: 12px;
+			width: 24px;
+			margin-right: 10px;
+			background: $gold;
+		}
 
-.faq-titulo::after {
-	content: '+';
-	float: right;
-	transition: transform .3s ease;
-}
+		.skills--title::after {
+			content: '+';
+			float: right;
+			transition: transform .3s ease;
+			color: $gold;
+		}
 
-.faq-conteudo {
-    background-color: $black;
-	padding: 10px;
-	color: $gold;
-	font-family: Helvetica;
-	font-size: .875em;
-	line-height: 1.4em;
-	display: none;
-}
+		.content--sk {
+			background-color: $black;
+			padding: 10px;
+			color: $gold;
+			font-size: 15px;
+			line-height: 1.4em;
+			display: none;
+			transition: opacity 4s ease-out;
+			list-style: none;
+			text-align: center;
+		}
 
-.trigger-input {
-	display: none;
-}
+		.trigger--input {
+			display: none;
+		}
 
-.trigger-input:checked + .trigger-wrapper .faq-conteudo {
-	display: block;
-}
+		.trigger--input:checked + .trigger-wrapper .content--sk {
+			opacity: 1;
+			display: block;
+		}
 
-.trigger-input:checked + .trigger-wrapper .faq-titulo::after {
-	transform: rotate(45deg) scale(1.08);
+		.trigger--input:checked + .trigger-wrapper .skills--title::after {
+			transform: rotate(45deg) scale(1.08);
+		}
+
+	}
 }
 </style>

@@ -11,7 +11,7 @@
         <div class="about">
             <contact/>
         </div>
-        <trigger/>
+        <trigger class="trigger"/>
     </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    height: 650px;
+    height: 700px;
     width: 500px;
     background-color: $purple;
     border: 3px solid $gold;
@@ -37,7 +37,6 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 
     .info {
         display: flex;
@@ -77,7 +76,10 @@ export default {
     .about{
         height: 20%;
         margin-right: 200px;
-        padding-top: 200px;
+        padding-top: 150px;
+    }
+    .trigger{
+        margin-top: 75px;
     }
 }
 </style>
