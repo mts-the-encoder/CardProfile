@@ -74,4 +74,17 @@ export default {
         }
     }
 }
+/*MOBILE*/
+@media (max-width: 425px) {
+    .contacts {
+        width: 350px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .contact {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
 </style>

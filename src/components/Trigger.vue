@@ -117,4 +117,41 @@
 
 	}
 }
+/*MOBILE*/
+@media (max-width: 425px){
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		
+		.item--list {
+			width: 180px;
+			display: flex;
+		}
+		.trigger-wrapper {
+			display: flex;
+			text-align: center;
+			
+			.skills--title {
+				font-size: 13px;
+				width: 100%;
+				
+			}
+			.skills--title::after{
+				font-size: 15px;
+				
+				vertical-align: middle;
+			}
+			.skills--title::before{
+				vertical-align: middle;
+				
+			}
+			.content--sk {
+				margin-right: 40px;
+			}
+		}
+	}
+}
 </style>

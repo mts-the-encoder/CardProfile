@@ -82,4 +82,12 @@ export default {
         margin-top: 75px;
     }
 }
+
+/*MOBILE*/
+@media (max-width: 425px){
+	.card {
+        height: 600px;
+        width: 400px;
+    }
+}
 </style>
