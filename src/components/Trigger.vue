@@ -129,10 +129,10 @@
 		.item--list {
 			width: 180px;
 			display: flex;
+			margin-top: 20px;
+			justify-content: center;
 		}
 		.trigger-wrapper {
-			display: flex;
-			text-align: center;
 			
 			.skills--title {
 				font-size: 13px;
@@ -149,7 +149,7 @@
 				
 			}
 			.content--sk {
-				margin-right: 40px;
+				text-align: center;
 			}
 		}
 	}

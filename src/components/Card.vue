@@ -86,8 +86,33 @@ export default {
 /*MOBILE*/
 @media (max-width: 425px){
 	.card {
-        height: 600px;
+        height: 650px;
         width: 400px;
-    }
+
+        .info {
+            padding: 0;
+
+            .letters {
+                padding-bottom: 10px;
+            }
+                .name {
+                    filter: drop-shadow(10px 5px 5px $black);
+                }
+                .city {
+                    font-size: 10px;
+                    padding: 0;
+                    position: relative;
+                    filter: drop-shadow(1px 2px 2px $black);
+                }
+                .job {
+                    font-size: 40px;
+                    font-weight: bold;
+                    padding: 0;
+                    padding-bottom: 20px;
+                    filter: drop-shadow(1px 0 1px $black);
+                    margin-top: 10px;
+                }
+        }
+}
 }
 </style>

@@ -80,11 +80,24 @@ export default {
         width: 350px;
         display: flex;
         justify-content: space-evenly;
+        margin-top: 10px;
+        padding-top: 30px;
 
         .contact {
             width: 45px;
             height: 45px;
         }
+        .contact:hover{
+        background-color: $white;
+    
+        .icon--contacts:hover {
+            filter: drop-shadow(0px 4px 4px $black);
+        }
+
+        .icon--contacts:hover {
+            filter: drop-shadow(0px 1px 1px $black);
+        }
+    }
     }
 }
 </style>
